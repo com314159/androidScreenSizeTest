@@ -2,16 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:background="@drawable/ic_launcher"
-    tools:context=".MainActivity" >
-	
+	android:background="#ffffff"
+	 >
+
     <Button
         android:id="@+id/id"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/values_res"
-        />
-   
+        android:layout_marginBottom="212dp"
+        android:text="点我测试机器分辨率" />
 
 </RelativeLayout>

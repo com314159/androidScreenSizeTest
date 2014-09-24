@@ -3,7 +3,6 @@ package com.example.androidscreensize;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -24,15 +23,17 @@ public class MainActivity extends Activity {
 	        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 	       int displayWidth = displayMetrics.widthPixels;
 	       int displayHeight = displayMetrics.heightPixels;
-	       String text = "width = " + String.valueOf(displayWidth);
-	       text = text + " Height = " + String.valueOf(displayHeight);
-	       text = text + " densith = " + String.valueOf(displayMetrics.density);
+	       String text = "width px = " + String.valueOf(displayWidth);
+	       text = text + " Height px = " + String.valueOf(displayHeight);
+	       text = text + " densith(px/dp) = " + String.valueOf(displayMetrics.density);
 	       text = text + " densithDpi = " + String.valueOf(displayMetrics.densityDpi);
 	       float widthDPi = displayWidth * 160 /displayMetrics.densityDpi;
 	       float heightDPi = displayHeight * 160 /displayMetrics.densityDpi;
 	       text = text + " totalDpWith = " + String.valueOf(widthDPi);
 	       text = text + " totalDpHeight = " + String.valueOf(heightDPi);
 	       text = text + " values  = " + getResources().getString(R.string.values_res);
+	       
+	       
 	       
 	       Toast.makeText(MainActivity.this, text,Toast.LENGTH_LONG).show();
 		}
